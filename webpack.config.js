@@ -4,16 +4,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: path.resolve(__dirname, './src/index.js')
+    main: path.resolve(__dirname, './src/index.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     clean: true,
+    publicPath: '/Leaderboard/',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
   ],
   module: {
@@ -30,4 +31,4 @@ module.exports = {
   optimization: {
     runtimeChunk: 'single',
   },
-}
+};

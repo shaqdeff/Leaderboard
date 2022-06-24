@@ -1,3 +1,91 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --display-flex: flex;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: beige;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  display: var(--display-flex);
+  justify-content: center;
+  margin-top: 10rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.score-board {
+  display: var(--display-flex);
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.board-header {
+  display: var(--display-flex);
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.btn {
+  outline: none;
+  width: 40%;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  background: none;
+}
+
+.score-list {
+  border: 2px solid black;
+  list-style: none;
+  display: var(--display-flex);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.score-value {
+  font-size: 1.4rem;
+  word-spacing: 1rem;
+  padding: 0.5rem;
+  width: 95%;
+}
+
+.colored {
+  background: #ccc;
+  font-size: 1.4rem;
+  word-spacing: 1rem;
+}
+
+.score-input {
+  display: var(--display-flex);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.add-score {
+  display: var(--display-flex);
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.add-score input {
+  height: 25px;
+  width: 150px;
 }
