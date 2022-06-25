@@ -115,7 +115,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _modules_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/api */ \"./src/modules/api.js\");\n\n\n\nconst refreshButton = document.querySelector('.refresh-btn')\nrefreshButton.addEventListener('click', () => {\n  _modules_api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getScores()\n}\n)\n\nconst form = document.querySelector('.add-score')\nform.addEventListener('submit', (e) => {\n  e.preventDefault();\n  _modules_api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addScore();\n}\n)\n\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _modules_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/api */ \"./src/modules/api.js\");\n\n\n\nconst refreshButton = document.querySelector('.refresh-btn');\nrefreshButton.addEventListener('click', () => {\n  _modules_api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getScores();\n});\n\nconst form = document.querySelector('.add-score');\nform.addEventListener('submit', (e) => {\n  e.preventDefault();\n  _modules_api__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addScore();\n});\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
 
 /***/ }),
 
@@ -135,7 +135,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst scoreList = document.querySelector('.score-list');\n\nconst renderScore = (scores) => {\n  let output = '';\n  scores.forEach((score, index) => {\n    output += `<li class=\"${index % 2 === 0 ? 'score-value' : 'score-value colored'}\">${score.user}: ${score.score}</li>`;\n  });\n  scoreList.innerHTML = output;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderScore);\n\n//# sourceURL=webpack://leaderboard/./src/modules/render.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst scoreList = document.querySelector('.score-list');\n\nconst renderScore = (scores) => {\n  let output = '';\n  scores.forEach((score, index) => {\n    output += `<li class=\"${index % 2 === 0 ? 'score-value' : 'score-value colored'}\">${score.user}: ${score.score}</li>`;\n  });\n  scoreList.innerHTML = output;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderScore);\n\n//# sourceURL=webpack://leaderboard/./src/modules/render.js?");
 
 /***/ })
 

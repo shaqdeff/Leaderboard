@@ -1,16 +1,13 @@
 import './styles.css';
-import Api from './modules/api'
+import Api from './modules/api';
 
-const refreshButton = document.querySelector('.refresh-btn')
+const refreshButton = document.querySelector('.refresh-btn');
 refreshButton.addEventListener('click', () => {
-  Api.getScores()
-}
-)
+  Api.getScores();
+});
 
-const form = document.querySelector('.add-score')
+const form = document.querySelector('.add-score');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   Api.addScore();
-}
-)
-
+});
