@@ -29,16 +29,19 @@ h2 {
 
 .score-board {
   display: var(--display-flex);
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 15rem;
+}
+
+.board {
+  width: 40vw;
 }
 
 .board-header {
   display: var(--display-flex);
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
 }
 
 .btn {
@@ -51,24 +54,32 @@ h2 {
 
 .score-list {
   border: 2px solid black;
+  border-radius: 10px;
   list-style: none;
   display: var(--display-flex);
   flex-direction: column;
+  gap: 0.5rem;
   align-items: flex-start;
-  padding: 0;
+  padding: 1rem;
 }
 
 .score-value {
-  font-size: 1.4rem;
-  word-spacing: 1rem;
-  padding: 0.5rem;
-  width: 95%;
+  display: var(--display-flex);
+  align-items: center;
+  font-size: 1.5rem;
+  word-spacing: 2px;
+  width: 100%;
 }
 
 .colored {
   background: #ccc;
-  font-size: 1.4rem;
-  word-spacing: 1rem;
+  font-size: 1.5rem;
+  height: 32px;
+  border-radius: 10px;
+}
+
+.score-value span {
+  padding: 0.5rem 1rem;
 }
 
 .score-input {
@@ -87,5 +98,7 @@ h2 {
 
 .add-score input {
   height: 25px;
-  width: 150px;
+  width: 180px;
+  outline: none;
+  border-radius: 5px;
 }
