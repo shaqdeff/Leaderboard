@@ -11,7 +11,6 @@ const form = document.querySelector('.add-score');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   Api.addScore();
-} 
-);
+});
 
 consoleText(['Add your score'], 'text', ['#dfbfbf']);

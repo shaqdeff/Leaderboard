@@ -89,7 +89,7 @@ h2 {
 }
 
 /* glitch effect */
-/* .glitch,
+.glitch,
 .glow {
   color: #dfbfbf;
   position: relative;
@@ -401,7 +401,7 @@ h2 {
   color: transparent;
   position: absolute;
   top: 0;
-} */
+}
 
 .score-board {
   display: var(--display-flex);
