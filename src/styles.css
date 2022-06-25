@@ -89,7 +89,7 @@ h2 {
 }
 
 /* glitch effect */
-.glitch,
+/* .glitch,
 .glow {
   color: #dfbfbf;
   position: relative;
@@ -401,7 +401,7 @@ h2 {
   color: transparent;
   position: absolute;
   top: 0;
-}
+} */
 
 .score-board {
   display: var(--display-flex);
@@ -475,7 +475,7 @@ h2 {
 }
 
 .colored {
-  background: #3c5b47c8;
+  background: #3c5b47d6;
   font-size: 1.5rem;
   height: 32px;
   border-radius: 10px;
