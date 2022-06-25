@@ -36,6 +36,7 @@ body {
   background-size: cover;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -52,19 +53,19 @@ h2 {
 }
 
 .neon {
-  animation: flicker 1.2s infinite alternate;
-  color: #fff;
+  animation: flicker 1.5s infinite alternate;
+  color: rgb(255, 255, 255);
 }
 
-/* Flickering animation */
+/* flickering animation */
 @keyframes flicker {
     
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
       text-shadow:
-      0 0 4px rgb(185, 185, 185),
-      0 0 11px rgb(186, 186, 186),
-      0 0 19px rgb(185, 185, 185),
+      0 0 4px rgb(170, 170, 170),
+      0 0 11px rgb(170, 170, 170),
+      0 0 19px rgb(170, 170, 170),
       0 0 40px var(--jazzberry-jam),
       0 0 80px var(--jazzberry-jam),
       0 0 90px var(--jazzberry-jam),
@@ -372,17 +373,6 @@ h2 {
   mix-blend-mode: difference;
 }
 
-.scanlines::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05%) 0.5%, transparent 1%);
-  animation: fudge 7s ease-in-out alternate infinite;
-}
-
 @keyframes fudge {
 
   from {
@@ -400,8 +390,6 @@ h2 {
   position: absolute;
   top: 0;
 }
-
-
 
 .score-board {
   display: var(--display-flex);
@@ -422,14 +410,38 @@ h2 {
 
 .btn {
   outline: none;
-  width: 40%;
+  width: 50%;
   border-radius: 5px;
-  padding: 0.5rem 0.75rem;
-  background: none;
+  border: none;
+  padding: 0.75rem;
+  color: #dfbfbf;
+  background: #326bb0bc;
+  text-transform: uppercase;
+  font-family: "Minecrafter.Reg";
+  letter-spacing: 2px;
+  font-size: small;
+  text-align: center;
+}
+
+.refresh-btn {
+  width: 110px;
+  height: 30px;
+}
+
+.submit-btn {
+  width: 90px;
+}
+
+.btn:hover {
+  background: #672564c4;
+}
+
+.btn:active {
+  background: #672564;
 }
 
 .score-list {
-  border: 2px solid black;
+  border: 3px solid #9d3199d0;
   border-radius: 10px;
   list-style: none;
   display: var(--display-flex);
@@ -437,6 +449,9 @@ h2 {
   gap: 0.5rem;
   align-items: flex-start;
   padding: 1rem;
+  background: #22506eb4;
+  max-height: 55vh;
+  overflow: scroll;
 }
 
 .score-value {
@@ -448,13 +463,15 @@ h2 {
 }
 
 .colored {
-  background: #ccc;
+  background: #3c5b47c8;
   font-size: 1.5rem;
   height: 32px;
   border-radius: 10px;
 }
 
 .score-value span {
+  color: rgb(166, 166, 166);
+  font-weight: 600;
   padding: 0.5rem 1rem;
 }
 
@@ -474,7 +491,17 @@ h2 {
 
 .add-score input {
   height: 25px;
-  width: 180px;
+  width: 15vw;
   outline: none;
+  border: 3px solid #9d3199cb;
   border-radius: 5px;
+  background: #008dc4a7;
 }
+
+.add-score input::placeholder {
+  color: #ccc;
+  font-family: 'Poppins';
+  padding-left: 0.5rem;
+}
+
+
