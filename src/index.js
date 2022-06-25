@@ -1,5 +1,6 @@
 import './styles.css';
 import Api from './modules/api';
+import consoleText from './modules/terminalFx';
 
 const refreshButton = document.querySelector('.refresh-btn');
 refreshButton.addEventListener('click', () => {
@@ -12,3 +13,5 @@ form.addEventListener('submit', (e) => {
   Api.addScore();
 } 
 );
+
+consoleText(['Add your score'], 'text', ['#dfbfbf']);
