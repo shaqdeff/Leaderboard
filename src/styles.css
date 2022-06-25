@@ -2,6 +2,11 @@
 
 :root {
   --display-flex: flex;
+  --jungle-green: #0e211e;
+  --hunter-green: #3c5b47;
+  --indigo-dye: #224f6e;
+  --blue: #008dc4;
+  --jazzberry-jam: #af075c;
 }
 
 html {
