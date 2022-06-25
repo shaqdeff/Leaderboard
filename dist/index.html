@@ -8,25 +8,27 @@
 <script defer src="/Leaderboard/runtime.js"></script><script defer src="/Leaderboard/main.js"></script></head>
 <body>
   <header>
-      <h1>LeaderBoard</h1>
+      <h1 class="neon">LeaderBoard</h1>
     </header>
 
     <section class="score-board">
       <div class="board">
         <div class="board-header">
-          <h2>Recent Scores</h2>
+          <h2 class="glitch" data-text="RECENTSCORES">Recent Scores</h2>
+          <h2 class="glow">Recent Scores</h2>
           <button type="button" class="btn refresh-btn">Refresh</button>
         </div>
+        <div class="scanlines"></div>
         <ul class="score-list">
         </ul>
       </div>
       
       <div class="score-input">
-        <h2>Add your score</h2>
+        <div class='console-container neon'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
         <form class="add-score">
-          <input type="text" id="name" placeholder="Your name">
+          <input type="text" id="user" placeholder="Your name">
           <input type="number" id="score" placeholder="Your score">
-          <button type="button" class="btn submit-btn">Submit</button>
+          <button type="submit" class="btn submit-btn">Submit</button>
         </form>
       </div>
     </section>
