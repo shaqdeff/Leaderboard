@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+@font-face {
+    font-family: 'Minecrafter.Alt';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Minecrafter.Alt.woff') format('woff');
+}
+@font-face {
+    font-family: 'Minecrafter.Reg';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Minecrafter.Reg.woff') format('woff');
+}
+
 :root {
   --display-flex: flex;
   --jungle-green: #0e211e;
@@ -17,19 +30,52 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: beige;
+  background: rgb(60,91,71);
+  background: linear-gradient(124deg, rgba(60,91,71,0.6) 5%, rgba(5,17,19,0.65) 50%, rgba(7,150,205,0.5) 95%), url(./assets/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
   font-family: 'Poppins', sans-serif;
+  height: 100vh;
 }
 
 h1 {
   display: var(--display-flex);
   justify-content: center;
   margin-top: 10rem;
-  font-size: 3rem;
+  font-size: 5rem;
+  font-family: 'Minecrafter.Alt';
+  letter-spacing: 3px;
 }
 
 h2 {
   font-size: 2rem;
+}
+
+.glow {
+  animation: flicker 1.2s infinite alternate;
+  color: #fff;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px rgb(185, 185, 185),
+      0 0 11px rgb(186, 186, 186),
+      0 0 19px rgb(185, 185, 185),
+      0 0 40px var(--jazzberry-jam),
+      0 0 80px var(--jazzberry-jam),
+      0 0 90px var(--jazzberry-jam),
+      0 0 100px #c04a85,
+      0 0 150px #c04a85;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
 }
 
 .score-board {
