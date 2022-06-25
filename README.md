@@ -34,7 +34,9 @@ git clone https://github.com/shaqdeff/Leaderboard.git
 
 ## Deployment
 
-- After opening the files in Visual Studio Code, press the **Go Live** button on the status bar (bottom of the window) to launch the files with Live Server.
+- After opening the files in Visual Studio Code, open the **VS Code** integrated terminal and run ``` npm install ``` to install the dependencies used.
+- Run ``` npm run build ``` to bundle the **JavaScript** files with Webpack.
+- Run ``` npm run start ``` to launch the files with Webpack Dev Server.
 
 ## Authors
 
@@ -53,7 +55,4 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc.
+- Background photo by [Carl Raw](https://unsplash.com/@carltraw) on [Unsplash](https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80).
