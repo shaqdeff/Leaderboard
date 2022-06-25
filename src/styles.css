@@ -45,7 +45,7 @@ h1 {
   justify-content: center;
   margin-top: 10rem;
   font-size: 5rem;
-  font-family: 'Minecrafter.Alt';
+  font-family: 'Minecrafter.Alt', sans-serif;
   letter-spacing: 3px;
 }
 
@@ -68,7 +68,6 @@ h2 {
   53%,
   57%,
   100% {
-
     text-shadow:
       0 0 4px rgb(170, 170, 170),
       0 0 11px rgb(170, 170, 170),
@@ -78,7 +77,6 @@ h2 {
       0 0 90px var(--jazzberry-jam),
       0 0 100px #c04a85,
       0 0 150px #c04a85;
-
   }
 
   20%,
@@ -109,7 +107,7 @@ h2 {
 }
 
 .glitch::after,
-.glow:after {
+.glow::after {
   content: attr(data-text);
   position: absolute;
   left: 2px;
@@ -121,7 +119,6 @@ h2 {
 }
 
 @keyframes glitch {
-
   1% {
     transform: rotateX(10deg) skewX(90deg);
   }
@@ -254,7 +251,6 @@ h2 {
 }
 
 @keyframes noise-2 {
-
   0% {
     clip-path: inset(55px 0 30px 0);
   }
@@ -304,7 +300,7 @@ h2 {
   }
 
   40% {
-    clip-path: inset(47px 0 30x 0);
+    clip-path: inset(47px 0 30px 0);
   }
 
   43.3333333333% {
@@ -386,13 +382,12 @@ h2 {
 }
 
 @keyframes fudge {
-
   from {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
   }
 
   to {
-    transform: translate(0px, 2%);
+    transform: translate(0, 2%);
   }
 }
 
@@ -429,7 +424,7 @@ h2 {
   color: #dfbfbf;
   background: #326bb0bc;
   text-transform: uppercase;
-  font-family: "Minecrafter.Reg";
+  font-family: "Minecrafter.Reg", sans-serif;
   letter-spacing: 2px;
   font-size: small;
   text-align: center;
