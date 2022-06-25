@@ -30,3 +30,8 @@ export default class Api {
     renderScore(data.result);
   };
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  Api.getScores();
+}
+);
