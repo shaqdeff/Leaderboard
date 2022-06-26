@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LeaderBoard</title>
-<script defer src="/Leaderboard/runtime.js"></script><script defer src="/Leaderboard/main.js"></script></head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeaderBoard</title>
+  <script defer src="/Leaderboard/runtime.js"></script><script defer src="/Leaderboard/main.js"></script></head>
+  <body>
+    <div id="preloader"></div>
+
+    <header>
       <h1 class="neon">LeaderBoard</h1>
     </header>
 
@@ -19,18 +21,20 @@
           <button type="button" class="btn refresh-btn">Refresh</button>
         </div>
         <div class="scanlines"></div>
-        <ul class="score-list">
-        </ul>
+        <ul class="score-list"></ul>
       </div>
-      
+
       <div class="score-input">
-        <div class='console-container neon'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+        <div class="console-container neon">
+          <span id="text"></span>
+          <div class="console-underscore" id="console">&#95;</div>
+        </div>
         <form class="add-score">
-          <input type="text" id="user" placeholder="Your name">
-          <input type="number" id="score" placeholder="Your score">
+          <input type="text" id="user" placeholder="Your name" />
+          <input type="number" id="score" placeholder="Your score" />
           <button type="submit" class="btn submit-btn">Submit</button>
         </form>
       </div>
     </section>
-</body>
+  </body>
 </html>

@@ -13,4 +13,12 @@ form.addEventListener('submit', (e) => {
   Api.addScore();
 });
 
+const loader = document.getElementById('preloader');
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    loader.style.display = 'none';
+  }
+    , 3000);
+});
+
 consoleText(['Add your score'], 'text', ['#dfbfbf']);

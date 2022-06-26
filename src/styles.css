@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 @font-face {
-  font-family: 'Minecrafter.Alt';
+  font-family: "Minecrafter.Alt";
   font-style: normal;
   font-weight: normal;
-  src: url('./fonts/Minecrafter.Alt.woff') format('woff');
+  src: url("./fonts/Minecrafter.Alt.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Minecrafter.Reg';
+  font-family: "Minecrafter.Reg";
   font-style: normal;
   font-weight: normal;
-  src: url('./fonts/Minecrafter.Reg.woff') format('woff');
+  src: url("./fonts/Minecrafter.Reg.woff") format("woff");
 }
 
 :root {
@@ -32,10 +32,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: rgb(60, 91, 71);
-  background: linear-gradient(124deg, rgba(60, 91, 71, 0.6) 5%, rgba(5, 17, 19, 0.65) 50%, rgba(7, 150, 205, 0.5) 95%), url(./assets/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
+  background: linear-gradient(
+      124deg,
+      rgba(60, 91, 71, 0.6) 5%,
+      rgba(5, 17, 19, 0.65) 50%,
+      rgba(7, 150, 205, 0.5) 95%
+    ),
+    url(./assets/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
   background-position: center;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   overflow: hidden;
 }
@@ -45,7 +51,7 @@ h1 {
   justify-content: center;
   margin-top: 10rem;
   font-size: 5rem;
-  font-family: 'Minecrafter.Alt', sans-serif;
+  font-family: "Minecrafter.Alt", sans-serif;
   letter-spacing: 3px;
 }
 
@@ -67,15 +73,10 @@ h2 {
   53%,
   57%,
   100% {
-    text-shadow:
-      0 0 4px rgb(170, 170, 170),
-      0 0 11px rgb(170, 170, 170),
-      0 0 19px rgb(170, 170, 170),
-      0 0 40px var(--jazzberry-jam),
-      0 0 80px var(--jazzberry-jam),
-      0 0 90px var(--jazzberry-jam),
-      0 0 100px #c04a85,
-      0 0 150px #c04a85;
+    text-shadow: 0 0 4px rgb(170, 170, 170), 0 0 11px rgb(170, 170, 170),
+      0 0 19px rgb(170, 170, 170), 0 0 40px var(--jazzberry-jam),
+      0 0 80px var(--jazzberry-jam), 0 0 90px var(--jazzberry-jam),
+      0 0 100px #c04a85, 0 0 150px #c04a85;
   }
 
   20%,
@@ -102,7 +103,8 @@ h2 {
   background: black;
   overflow: hidden;
   top: 0;
-  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+  animation: noise-1 3s linear infinite alternate-reverse,
+    glitch 5s 5.05s infinite;
 }
 
 .glitch::after,
@@ -537,7 +539,16 @@ h2 {
 
 .add-score input::placeholder {
   color: rgb(181, 181, 181);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   padding-left: 0.5rem;
+}
+
+#preloader {
+  background: rgb(0, 0, 0) url(./assets/loading.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
