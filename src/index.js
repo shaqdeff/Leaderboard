@@ -13,12 +13,18 @@ form.addEventListener('submit', (e) => {
   Api.addScore();
 });
 
-const loader = document.getElementById('preloader');
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    loader.style.display = 'none';
+
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("#preloader").style.visibility = "visible";
+  } else {
+    setTimeout(() => {
+      document.querySelector("#preloader").style.display = "none";
+    }, 3500);
+    document.querySelector("body").style.visibility = "visible";
   }
-    , 3000);
-});
+};
+
 
 consoleText(['Add your score'], 'text', ['#dfbfbf']);
